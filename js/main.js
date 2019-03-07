@@ -19,7 +19,7 @@ var x = setInterval(function() {
     // Display the result in the element with id="clock"
     document.getElementById("clock").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    // If the count down is finished, write some text 
+    // If the count down is finished then print expired 
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("clock").innerHTML = "EXPIRED";
